@@ -3,6 +3,7 @@ import 'package:gis_google/GoogleMapTheme/GoogleMapTheme.dart';
 import 'package:gis_google/GooglePlacesAPI/GooglePlacesAPI.dart';
 import 'package:gis_google/HomeScreen/home_screen.dart';
 import 'package:gis_google/LatLng2Adress/latlng.dart';
+import 'package:gis_google/MainSite/WelcomePage.dart';
 import 'package:gis_google/Userlocation/GetUserLocation.dart';
 
 import 'MainSite/SearchThemesGoogle.dart';
@@ -18,13 +19,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        '/ThemesAndPlaces': (context) => ThemesAndPlaces(),
+      },
       debugShowCheckedModeBanner: false,
       title: 'GIS App 2.0',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ThemesAndPlaces(),
+      home: WelcomePage(),
     );
   }
 }

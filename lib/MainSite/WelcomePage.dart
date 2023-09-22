@@ -12,6 +12,7 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
 
+  LinearGradient _backgroundGradiant = LinearGradient(colors: [Colors.green, Colors.blue],begin: Alignment.topCenter, end: Alignment.bottomCenter);
   bool isThirdTileVisible = false;
 
   @override
@@ -26,7 +27,7 @@ class _WelcomePageState extends State<WelcomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Info'),
+        title: Text('Xplore'),
         centerTitle: true,
         backgroundColor: Colors.cyan.shade300,
       ),
@@ -76,12 +77,17 @@ class _WelcomePageState extends State<WelcomePage> {
           ],
         ),
       ),
-      body: SingleChildScrollView(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: _backgroundGradiant
+        ),
         padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SizedBox(height: 40),
+            Image.asset('assets/mapIcon_1024.png',height: 100,width: 100),
+            SizedBox(height: 30),
             Text('Willkommen bei Xplore',
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),),
             SizedBox(height: 25.0),
@@ -114,7 +120,7 @@ class _WelcomePageState extends State<WelcomePage> {
             SizedBox(height: 40),
             FloatingActionButton(
               tooltip: 'Karte öffnen',
-              backgroundColor: Colors.green.shade700,
+              backgroundColor: Colors.red.shade400,
               hoverColor: Colors.greenAccent.shade200,
               hoverElevation: 50,
               highlightElevation: 50,
@@ -125,7 +131,9 @@ class _WelcomePageState extends State<WelcomePage> {
               },
             ),
             SizedBox(height: 10),
-            Text('Klicke hier um zur Karte zu gelangen.')
+            Text('Klicke hier um zur Karte zu gelangen.'),
+            SizedBox(height: 35),
+            Image.asset('assets/bht_anthrazit.png',height: 60,width: 150),
           ],
         ),
       ),

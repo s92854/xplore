@@ -1,14 +1,15 @@
 # Xplore
+Xplore ist eine Kartenapp basierend auf den Google Maps Services, die Funktionen der Geocodierung und Geolokalisierung verwendet. Diese nutzend gibt es eine Suchfunktion mit Autofill. Verschiedene Designs für die Karte sind ebenfalls auswählbar.
 
-A map app including geocoding, geolocation, a search engine with autofill and several themes for the map.
+## Über Xplore
+### Technische Daten
+* programmiert in Flutter und Android Studio
+* open-source auf [Github](https://github.com/s92854/xplore)
+* basiert auf den Google Maps Services
 
-## About Xplore
-### Technical Data
-* programmed in Flutter and Android Studio
-* open-source on Github (https://github.com/s92854/xplore)
-* based on Google API's
+### Hintergrund
+* erstellt von Nico Haupt
+* als Abschlussprojekt für das Modul 'GIS Geländepraktikum' an der BHT 2023 erstellt
+* kein weiterer Support
 
-### Background
-* coded by Nico Haupt
-* designed as a final project for the module 'GIS Geländepraktikum' at the BHT 2023
-* no further support
+Genaueres kann man in der [Dokumentation](https://github.com/s92854/xplore/blob/master/Dokumentation.md) nachlesen.

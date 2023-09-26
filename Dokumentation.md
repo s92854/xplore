@@ -65,7 +65,13 @@ Nun besteht auf der Seite einerseits die Möglichkeit die Suchfunktion mit Autof
 
 &nbsp;
 
-Die App kann mit androidüblichen Mitteln beendet werden.
+Beim Klicken auf das Textfeld der Suchfunktion, öffnet sich die Autofillbox. Bei Eingabe von mindestens einem Buchstaben, schlägt die Suchfunktion einem Orte, Straßen und Points of Interest vor.
+
+<img src="https://github.com/s92854/xplore/assets/134683810/4fee71a4-c3ac-43f2-841e-27278a714d9a" alt="drawing" height="500"/>
+
+&nbsp;
+
+Die App kann jederzeit mit androidüblichen Mitteln beendet werden.
 
 ## Anmerkungen
 Beim wiederholten Aufruf der Karte öffnet sich ein Berechtigungsdialog bezüglich der Gültigkeit der erteilten Berechtigung der App. Hier ist es sinnvoll "Jederzeit gestatten" (Allow all the time) auszuwählen, damit sich dieser Dialog nicht jedes Mal öffnet.
